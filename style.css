@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url("img/hello.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5.5rem;
+}
+
+.head a > h1 {
+  font-size: 6rem;
+  padding: 4.5rem 7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  transform: rotate(-20deg);
+}
+
+/* Main section */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10rem;
+  color: #fff;
+  font-weight: 100;
+  flex: 1;
+}
+
+.main-section > h1 {
+  font-size: 12rem;
+}
+
+.main-section > h2 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+.form {
+  margin-top: 4.8rem;
+}
+
+.form > input {
+  width: 40rem;
+  padding: 1rem 3.8rem;
+  font-size: 2.4rem;
+  color: #000;
+  border: 0.1rem solid #8e8e8e;
+  text-align: left;
+}
+
+.form > button {
+  font-size: 2.4rem;
+  padding: 1rem 3.8rem;
+  width: 14.8rem;
+  color: #fff;
+  border: 0.1rem solid #8e8e8e;
+  background-color: #00afec;
+  position: relative;
+  right: 0.3rem;
+}
+
+.main-section p {
+  margin-top: 11rem;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer section */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer p {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form > input {
+    width: 100%;
+  }
+
+  .form > button {
+    margin-top: 1rem;
+  }
+}
